@@ -1,0 +1,136 @@
+*{
+   
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    
+}
+body{
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../img/fondoquiensesomos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.home-button {
+    display: inline-flex;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius:9px;
+    text-decoration: none;
+    transition: transform 0.3s;
+    
+  }
+  
+  .home-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+  }
+  
+  .home-button span {
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+  
+  .home-button:hover span {
+    transform: scale(1.1);
+  }
+  
+h1{
+    color: rgba(5, 151, 242, 0.404);
+    margin: 50px 0;
+    display: block;
+    text-align: center;
+    font-size: 80px;
+
+    text-shadow: 0 0 20px rgb(0, 195, 255);
+
+}
+
+.fotos{
+    position: relative;
+    width: 900px;
+    height: 950px;
+    /*Margenes*/
+    margin: auto;
+   
+}
+
+.container:after{
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.container{
+    width: 90%;
+    margin: 0 9%;
+}
+
+.container div{
+    width: 28%;
+    height: auto;
+    display: inline;
+    float: left;
+    margin: 0% 3% 0% 0%;
+    padding: 0;
+}
+
+.container div img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px gray;
+    border: 5px solid white;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.container div img~span{
+    width: 100%;
+    display: block;
+    opacity: 0;
+    margin: 0;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2px 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px #666;
+}
+
+.container div img:hover+span{
+    opacity: 1;
+}
+
+.container:hover div{
+    opacity: 0.2;
+    transform: scale(0.7);
+    transition: 2s;
+}
+
+.container:hover div:hover{
+    opacity: 1;
+    transform: scale(1);
+}
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 30px; 
+    }
+
+    .container div {
+        width: 100%; 
+    }
+}
+@media screen and (max-width: 992px) {
+    .container div {
+        width: 45%; 
+    }
+}

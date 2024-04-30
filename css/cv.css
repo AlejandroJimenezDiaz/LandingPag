@@ -1,0 +1,142 @@
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../img/fondoquiensesomos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.home-button {
+    display: inline-flex;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius:9px;
+    text-decoration: none;
+    transition: transform 0.3s;
+    
+  }
+  
+  .home-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+  }
+  
+  .home-button span {
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+  
+  .home-button:hover span {
+    transform: scale(1.1);
+  }
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+}
+
+.container .nombre{
+    color: black;
+    border-bottom: 2px solid aqua;
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: auto;
+}
+
+
+    
+.container .sobremi{
+    background-color: #666;
+    border-radius: 12px;
+}
+
+.container .experiencia{
+    background-color: #666;
+    border-radius: 12px;
+}
+.container .estudios{
+    background-color: #666;
+    border-radius: 12px;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nombre {
+    font-size: 36px;
+    color: #333;
+    margin: 0;
+}
+
+.oficio {
+    font-size: 20px;
+    color: #666;
+    margin: 0;
+}
+
+.sobremi h2 .experiencia h2 .estudios h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.sobremi h2 .experiencia h2 .estudios h2  ul {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+.permiso {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.permiso .carnet {
+    width: 140px;
+    margin: 10px;
+    border-radius: 12px;
+}
+.carnet:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 90%;
+    }
+    .nombre {
+        font-size: 24px;
+    }
+    .oficio {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 80%;
+    }
+    .nombre {
+        font-size: 28px;
+    }
+    .oficio {
+        font-size: 18px;
+    }
+}
