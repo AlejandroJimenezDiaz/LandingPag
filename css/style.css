@@ -188,21 +188,27 @@ ion-icon:hover{
 
 @media screen and (max-width: 576px) {
     header {
-      padding: 20px;
+      padding: 10px;
     }
-  
-    header .navbar {
-      flex-direction: column;
+    .logo{
+      display: none;
       align-items: center;
+    }
+    header .navbar {
+      flex-direction:column-reverse;
+      align-items: center;
+      margin: auto;
+    
     }
   
     header .navbar li {
       margin-left: 0;
       margin-bottom: 10px;
+
     }
   
     .contenido {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
   
     .contenido .imgBox {
@@ -214,12 +220,13 @@ ion-icon:hover{
   
     .contenido .imgBox img {
       height: auto;
-      max-width: 100%;
+      max-width: 350%;
+      opacity: 0.8;
     }
+ 
   
     .copyright {
-      left: 0;
-      padding: 0 20px;
+  display: none;
     }
   
     .redesSociales {
@@ -231,7 +238,7 @@ ion-icon:hover{
     header {
       padding: 30px 50px;
     }
-  
+
     .contenido .tituloBox {
       max-width: 80%;
     }
